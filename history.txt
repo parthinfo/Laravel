@@ -1,0 +1,800 @@
+ 1020  find . -name entrypoint.sh
+
+ 1021  docker-compose ps
+ 1022  docker-compose up -d
+
+ 1027  cd Sites/LABook/chapter-01
+
+ 1029  docker-compose ps
+
+ 1034  docker-compose run --rm -no-deps php-fpm php artisan cache:clear
+ 1035  docker-compose stop
+
+ 1036  php artisan cache:clear
+
+ 1037  chmod -R 777 storage/
+ 1056  composer dump-autoload
+ 1057  docker-compose start
+ 1060  docker-compose exec php-fpm bash
+
+ 1061  cd Sites/LABook/chapter-01
+ docker-compose ps
+ docker-compose stop
+ 1065  cd ..
+.
+ 1079  mv chapter-01 chapter-yy
+ 1080  ls -al
+ 1081  composer create-project --prefer-dist laravel/laravel chapter-01
+ 1082  cd chapter-01
+ 1083  ls -al
+ 1084  less docker-compose.yml 
+ 1085  less database/migrations/2014_10_12_000000_create_users_table.php 
+ 1086  docker-compose up -d
+ 1087  history|grep cache
+ 1088  docker-compose ps
+ 1089  docker-compose stop
+ 1090  php artisan cache:clear
+ 1091  docker-compose start
+ 1092  docker ps -a
+ 1093  docker-compose exec php-fpm bash
+ 1094  docker-compose stop
+ 1095  docker ps -a
+ 1096  docker rm 8074b7a35858
+ 1097  docker rm 5f1f0ffb82fc
+ 1098  docker rm 5144374db19d
+ 1099  docker rm d539327f6b09
+ 1100  less docker-compose.yml 
+ 1101  find . -name docker*
+ 1102  find . -name Docker*
+ 1103  cd phpdocker/php-fpm/
+ 1104  less Dockerfile 
+ 1105  cat Dockerfile 
+ 1106  gedit Dockerfile 
+ 1107  ls -al
+ 1108  gedit Dockerfile 
+ 1109  cd ..
+ 1110  ls -al
+ 1111  ps -a
+ 1112  docker ps -a
+ 1113  docker-compose up -d
+ 1114  docker-compose exec php-fpm bash
+ 1115  docker-compose stop
+ 1116  docker ps -a
+ 1117  docker rm f081365a2c89
+ 1118  docker rm e00c95155e68
+ 1119  docker rm f067bb75976f
+ 1120  docker rm 18887c67f469
+ 1121  cd ..
+ 1122  ls -al
+ 1123  mv chapter-01 chapter-zz
+ 1124  ls -al
+ 1125  cd /opt/dkrProjects/
+ 1126  ls -alt
+ 1127  cd LABook/
+ 1128  ls -alt
+ 1129  cd LACh01/
+ 1130  ls -alt
+ 1131  cd book-example/
+ 1132  ls -al
+ 1133  less docker-compose.yml 
+ 1134  cd ..
+ 1135  ls -al
+ 1136  cd 
+ 1137  cd Sites/LABook/
+ 1138  composer create-project –prefer-dist laravel/laravel chapter-01
+ 1139  ls -al
+ 1140  exit
+ 1141  cd Sites/LABook/chapter-01
+ 1142  ls -al
+ 1143  ls -al storage/logs/
+ 1144  chmod -R 777 storage/
+ 1145  ls -alt storage
+ 1146  atom .
+ 1147  cat .env
+ 1148  cd ..
+ 1149  cd chapter-yy
+ 1150  cat .env
+ 1151  cat docker-compose.yml 
+ 1152  cd ..
+ 1153  cd chapter-01
+ 1154  cat docker-compose.yml 
+ 1155  docker-compose ps
+ 1156  cd
+ 1157  cd .config/
+ 1158  ls -al
+ 1159  ls -al psysh/
+ 1160  ps -aef|grep docker
+ 1161  man groupadd
+ 1162  man useradd
+ 1163  cd
+ 1164  ps -aef|grep dock
+ 1165  cd Sites/LABook/chapter-01
+ 1166  atom .
+ 1167  cd
+ 1168  cd .config/
+ 1169  ls -al
+ 1170  ls -al psysh/
+ 1171  cd
+ 1172  cd Sites/LABook/chapter-01/database/migrations/
+ 1173  ls -al
+ 1174  chown kamlesh:developers 2018_12_25_103504_create_bands_table.php 
+ 1175  sudo chown kamlesh:developers 2018_12_25_103504_create_bands_table.php 
+ 1176  cd ../seeds/
+ 1177  ls -al
+ 1178  sudo chown kamlesh:developers BandsTableSeeder.php 
+ 1179  cd ..
+ 1180  cd .
+ 1181  cd ..
+ 1182  ls -al
+ 1183  ls -alt
+ 1184  less docker-compose.yml 
+ 1185  cd app
+ 1186  ls -al
+ 1187  ls -alt
+ 1188  less Band.php 
+ 1189  cd ..
+ 1190  find . -name Docke*
+ 1191  cd phpdocker/php-fpm/
+ 1192  ls -alt
+ 1193  less php-ini-overrides.ini 
+ 1194  less Dockerfile 
+ 1195  cd ../../..
+ 1196  mkdir mywork
+ 1197  cd mywork/
+ 1198  cp ../chapter-01/phpdocker/php-fpm/Dockerfile ./ch01_fpm_Dockerfile
+ 1199  ls -al
+ 1200  less ch01_fpm_Dockerfile 
+ 1201  cd ../chapter-01/
+ 1202  cd ..
+ 1203  exit
+ 1204  cd Sites/
+ 1205  ls -al
+ 1206  mkdir LEBook
+ 1207  cd LEBook/
+ 1208  ls -al
+
+
+
+
+
+ 1209  composer create-project laravel/laravel furbook.com --prefer-dist
+ 1211  cd furbook.com/
+ 1214  less .env
+ 1215  php artisan app:name Furbook
+ 1217  less composer.json 
+ 1219  php artisan serve
+
+
+ 1221  cd Laravel-5x-Cookbook/
+ 1223  php artisan serve
+ 1224  less README.md 
+ 1225  php artisan serve
+
+
+ 1228  cd LEBook/furbook.com/
+ 1231  php artisan serve
+ 1235  cd Base-1.0.4/
+
+ 1245  composer require backpack/base
+ 1247  php artisan backpack:base:install
+
+ 1258  cd LEBook/furbook.com/
+ 1260  cd ../../Base-1.0.4/
+ 1263  mv vendor src
+ 1264  cd src
+ 1267  php artisan backpack:base:install
+ 1269  mv vendor ../.
+ 1270  cd ..
+ 1273  less .travis.yml 
+ 1274  cd ../LEBook/furbook.com/
+ 1276  php artisan serve
+ 1278  less helpers.php 
+ 1280  cd ../..
+ 1282  cd Base-1.0.4/
+ 1284  less composer.json 
+ 1285  less README.md 
+ 1289  cd ../LEBook/furbook.com/
+ 1292  cd -
+ 1294  cd src
+ 1296  cd ..
+ 1302  cd -
+ 1303  cd ../LEBook/furbook.com/
+ 1309  less composer.json 
+ 1313  cd -
+ 1317  cd ..
+ 1319  mv Demo-master Demo_Base
+ 1320  cd Demo_Base/
+ 1324  cd ..
+ 1325  mv Demo_Base Backpack_Demo
+ 1326  cd Backpack_Demo/
+ 1330  composer install
+ 1334  cd ..
+ 1336  mv h5bp-book-master h5bp-book
+ 1337  cd h5bp-book/
+ 1340  cd ..
+ 1341  cd html5boilerplate/
+ 1343  cd ..
+ 1345  cd ProjectTemplate1/
+ 1347  cd fonts/
+ 1349  touch .htaccess
+ 1350  cd ..
+ 1352  cd ..
+ 1353  cd h5bp-book/
+ 1355  cd ..
+ 1356  cd ProjectTemplate1/
+ 1359  cd ..
+ 1361  mkdir Bootstrap-Site-Blueprints
+ 1363  mv ProjectTemplate1 Bootstrap-Site-Blueprints/.
+ 1364  mv bootstrap-3.3.7-dist Bootstrap-Site-Blueprints/.
+ 1365  mv bootstrap-4.0.0 Bootstrap-Site-Blueprints/.
+ 1366  mv h5bp-book Bootstrap-Site-Blueprints/.
+ 1367  mv Respond-master Bootstrap-Site-Blueprints/.
+ 1369  cd Bootstrap-Site-Blueprints/
+ 1371  cd ..
+
+ 1373  cd demowebsite/
+ 1375  less .env
+ 1377  cd resources/views/
+ 1379  cd ../..
+ 1380  php artisan serve
+
+
+ 1399  cd Sites/Laravel-5x-Cookbook/
+ 1402  cd ../Base-1.0.4/
+ 1405  cp src/helpers.php ../LEBook/furbook.com/.
+ 1408  cd ../Backpack_Demo/
+ 1410  php artisan key:generate
+ 1413  cp .env.example .env
+ 1415  chmod 700 .env
+ 1417  chmod 644 .env
+ 1419  php artisan serve
+ 1421  php artisan key:generate
+ 1423  php artisan migrate
+
+
+ 1425  mv Backpack_Demo Backpack_Demo_old
+ 1426  mv Demo-master Backpack_Demo
+
+ 1428  cd Backpack_Demo
+ 1430  cp .env.example .env
+ 1431  chmod 644 .env
+ 1438  composer update
+ 1439  composer install
+ 1442  php artisan key:generate
+ 1443  php artisan migrate
+ 1444  php artisan db:seed
+ 1445  php artisan config:clear
+ 1446  php artisan db:seed
+ 1447  php artisan serve
+
+
+
+ 1449  cd /gitrepo/
+ 1452  git config -l
+ 1453  git config --global core.editor "atom"
+ 1455  git config --global color.ui auto
+ 1457  cd
+ 1458  cd Sites/
+ 1460  composer create-project laravel/laravel demowebsite
+ 1461  cd demowebsite/
+ 1464  php artisan serve
+ 1466  chmod -R 777 storage
+
+
+
+ 1467  git init
+ 1468  git status
+ 1469  git add -A
+ 1470  git status
+ 1471  git commit -m "First Commit"
+ 1472  git remote add origin https://github.com/parthinfo/MyGitRipo
+ 1474  git push -u origin master
+ 1475  git remote add origin https://github.com/parthinfo/Laravel.git
+ 1479  git remote add origin https://github.com/parthinfo/Laravel.git -f
+
+ 1480  git init
+ 1481  git remote add origin https://github.com/parthinfo/Laravel.git 
+ 1485  git remote set-url --add origin https://github.com/parthinfo/Laravel.git
+ 1487  git remote set-url --delete origin https://github.com/parthinfo/MyGitRipo
+ 1489  git push -u origin master
+ 1492  php artisan make:controller PagesController
+ 1493  cd ..
+ 1496  cd Bootstrap-Site-Blueprints/
+ 1498  cd ..
+
+
+ 1502  cd /e
+ 1503  cd chopdi/
+ 1507  mv 'Your First Week with React.pdf' YrFirstWk_with_React.pdf
+ 1508  ls -al
+ 1509  mv 'XML - Programming Web Services With Soap (O'\''Reilly).pdf' XML-Programming_WebServicesWithSoap.pdf' 
+ 1510  mv 'XML - Programming Web Services With Soap (O'\''Reilly).pdf' XML-Programming_WebServicesWithSoap.pdf
+ 1511  mv 'Workflow, Document & Business Process Management.pdf' WorkflowDocument_BusinessProcessManagement.pdf
+ 1512  ls -al
+ 1513  mv 'Web Standars Mastering HTML5, CSS3, and XML.pdf' WebStandarsMastering_HTML5CSS3andXML.pdf
+ 1514  mv 'WebSphere AS_Scalability.pdf' WebSphere_AS_Scalability.pdf
+ 1515  mv 'WebSphere ASv7_Admin-Guide.pdf' WebSphere_ASv7_Admin-Guide.pdf
+ 1516  mv 'wcm800 IBM.pdf' wcm800_IBM.pdf
+ 1517  ls -al
+ 1518  mv 'WebSphere-Using WS with BI sg246583.pdf' WebSphere-Using_WS_with_BI_sg246583.pdf
+ 1519  ls -al
+ 1520  mv 'UML 2.0 in Action 1904811558.pdf' UML_2.0_in_Action_1904811558.pdf
+ 1521  ls -al
+ 1522  mv 'Thinking in JavaScript [eBook].pdf' Thinking_in_JavaScript.pdf
+ 1523  ls -al
+ 1524  mv 'UML2 and Unified Process - Second Edition.pdf' UML2_and_UnifiedProcess-SecondEdition.pdf
+ 1525  ls -al
+ 1526  mv 'Velocity John.Wiley.and.Sons.Mastering.Apache.Velocity.eBook-KB.pdf' Mastering_Apache_Velocity.pdf
+ 1527  rm 'Velocity John Wiley & Sons - Mastering Apache Velocity.pdf' 
+ 1528  ls -al
+ 1529  mv 'Using Liferay Portal 6.1.pdf' Using_LiferayPortal_6.1.pdf
+ 1530  mv 'Velocity User Guide.pdf' Velocity_UserGuide.pdf
+ 1531  ls -al
+ 1532  mv 'WebSpherePortal n WCM 8 ReviewerGuide.pdf' WebSpherePortal_n_WCM-8_ReviewerGuide.pdf
+ 1533  mv 'Web Security Testing Cookbook  Systematic Techniques to Find Problems Fast.pdf' WebSecurityTestingCookbook.pdf
+ 1534  ls -al
+ 1535  mv 'VMware vSphere 5.5 Cookbook.pdf' VMware_vSphere_5.5_Cookbook.pdf
+ 1536  ls -al
+ 1537  ls -alt
+ 1538  rm 'Messaging Soln in Linux Env_sg246336.pdf' 
+ 1539  rm JavaTestingAndDesign_Cohen_book.pdf 
+ 1540  rm sample_ch04_ESB.pdf 
+ 1541  rm CRYSTAL_REPORTS_10-_COMPLETE_REFERENCE.chm 
+ 1542  rm The_Reiki_Teachers_Handbook.pdf 
+ 1543  rm 'Java J2EE Hibernate Struts Spring Hibernate Together.pdf' 
+ 1544  rm Springer.Handbook.of.Cloud.Computing.Sep.2010.
+ 1545  rm Springer.Handbook.of.Cloud.Computing.Sep.2010.pdf
+ 1546  mv 'Bonus_Material EntrJava_UML.pdf' Bonus_Material_EntrJava_UML.pdf
+ 1547  ls -alt
+ 1548  rm 'Spring-Integration_7_5_2011 - Pro.pdf' 
+ 1549  mv 'Spring in Action (3rd Edition).pdf' SpringInAction_3rdEdition.pdf
+ 1550  mv 'Spring in Action (1st Edition).pdf' SpringInAction_1stEdition.pdf
+ 1551  mv 'Spring In Action (2nd Edition).pdf' SpringInAction_2ndEdition.pdf
+ 1552  ls -alt
+ 1553  mv 'spring.aspectj in action.manning.pdf' spring_aspectj_inAction.pdf
+ 1554  ls -alt
+ 1555  mv 'Patterns - Implementing an SOA using an Enterprise Service Bus.pdf' PatternsImplementingSOA_usingESB.pdf
+ 1556  mv 'Hibernate Quickly - Manning In Action Series.pdf' HibernateQuickly_ManningInAction.pdf
+ 1557  ls -alt
+ 1558  rm 'hibernate in action_manning - old.pdf' 
+ 1559  rm 'Java Persistance with Hibernate-Manning.pdf' 
+ 1560  ls -alt
+ 1561  rm Quickstart*
+ 1562  ls -alt
+ 1563  mv 'JSF 2.0 Cookbook [eBook].zip' JSF_2.0_Cookbook.zip
+ 1564  ls -alt
+ 1565  rm 'Software Testing and Analysis Process, Principles and Techniques~tqw~_darksiderg.chm' 
+ 1566  ls -alt
+ 1567  mv 'Test Driven Development for Java Developers.pdf' TDD_for_JavaDevelopers.pdf
+ 1568  ls -alt
+ 1569  rm 'java black book.rar' 
+ 1570  rm tirando_max_javaee_5_jcompany.
+ 1571  rm tirando_max_javaee_5_jcompany.rar
+ 1572  ls -alt
+ 1573  mv 'Liferay - Practical Liferay Java based Portal Applications Development.pdf' LiferayPractical.pdf
+ 1574  ls -alt
+ 1575  rm 'is elec comm sec 2010w.pdf' 
+ 1576  mv 'E-Book Wordpress.pdf' Wordpress.pdf
+ 1577  ls -alt
+ 1578  mv 'r4.enterprise OSGi.pdf' EnterpriseOSGi_R4.pdf
+ 1579  ls -alt
+ 1580  ls -al BeagleBone\ Home\ Automation\ Blueprints.pdf 
+ 1581  cd ..
+ 1582  ls -al
+ 1583  cd 'System Volume Information'/
+ 1584  ls -al
+ 1585  cd ..
+ 1586  ls -al
+ 1587  ls -al test_db-master/
+ 1588  cd ..
+ 1589  ls -al
+ 1590  cd
+ 1591  ls -al
+ 1592  ls -al /e
+ 1593  mount
+ 1594  sudo umount /e
+ 1595  man fsck
+ 1596  man fsck.vfat
+ 1597  sudo fsck.vfat /dev/sda3
+ 1598  mount
+ 1599  sudo umount /f
+ 1600  sudo umount /d
+ 1601  sudo umount /c
+ 1602  sudo init 0
+ 1603  cd /Oracle12C/Downthree/gz/
+ 1604  ls -al /e/Downloads/*.gz
+ 1605  mv /e/Downloads/*.gz .
+ 1606  ls -al
+ 1607  rm 'mysql-connector-java-5.1.42(1).tar.gz' 
+ 1608  ls -al
+ 1609  ls -al /e/Downloads/
+ 1610  cd ..
+ 1611  ls -al
+ 1612  mkdir jar
+ 1613  ls -al
+ 1614  cd jar
+ 1615  mv /e/Downloads/*.jar .
+ 1616  mv /e/Downloads/*.exe .
+ 1617  cd ../../Downfour/
+ 1618  ls -al
+ 1619  mkdir ../Downthree/jpg
+ 1620  mkdir ../Downthree/mp4
+ 1621  df
+ 1622  cd /e
+ 1623  cd Documents/
+ 1624  ls -al
+ 1625  cd -
+ 1626  cd /Oracle12C/
+ 1627  sudo mkdir Documents
+ 1628  sudo chown kamlesh:developrs Documents
+ 1629  sudo chown kamlesh:developers Documents
+ 1630  cd Documents/
+ 1631  mv /e/Documents/* .
+ 1632  ls -al /e/Documents/
+ 1633  cd /e/Documents/
+ 1634  ls -al
+ 1635  rm .~lock.Final\ Report.docx# 
+ 1636  cd ..
+ 1637  rmdir Documents/
+ 1638  ls -al
+ 1639  ls -al /Oracle12C/Downfour/
+ 1640  ls -al /Oracle12C/Downthree/
+ 1641  cd /Oracle12C/
+ 1642  sudo mkdir edrv
+ 1643  sudo chown kamlesh:developers edrv
+ 1644  cd /e
+ 1645  ls -al
+ 1646  df
+ 1647  ls -al /CentOS/
+ 1648  exit
+ 1649  ls -al /e
+ 1650  cd /Oracle12C/Downtwo/
+ 1651  ls -al
+ 1652  cd ..
+ 1653  ls -al
+ 1654  sudo mkdir Downthree
+ 1655  sudo chown kamlesh:developers Downthree
+ 1656  cd /e/Downloads/
+ 1657  ls -al
+ 1658  rm Yamaha-PSRF51-61-Keys-Portable-KeyboardIt-is-never-used-and-almost-like-newIt-is-4-months-old-VB201705171774173-ak_LWBP688091844-1534086714.webp 
+ 1659  cd -
+ 1660  cd Downthree/
+ 1661  mkdir zip
+ 1662  mkdir gz
+ 1663  mkdir pdf
+ 1664  mv /e/Downloads/*.pdf pdf/.
+ 1665  cd zip
+ 1666  mv /e/Downloads/*.zip .
+ 1667  ls -al
+ 1668  cd ..
+ 1669  cd -
+ 1670  ls -al /e/Downloads/ZIPs/
+ 1671  mv /e/Downloads/ZIPs/*.zip .
+ 1672  cd ../gz/
+ 1673  mv /e/Downloads/ZIPs/*.gz .
+ 1674  ls -al /e/Downloads/ZIPs/
+ 1675  mv /e/Downloads/ZIPs/*.bz2 .
+ 1676  cd ../jar/
+ 1677  mv /e/Downloads/ZIPs/*.jar .
+ 1678  mv /e/Downloads/ZIPs/*.exe .
+ 1679  ls -al /e/Downloads/ZIPs/
+ 1680  rmdir /e/Downloads/ZIPs/
+ 1681  ls -al /e/Downloads/
+ 1682  cd /e/Downloads/
+ 1683  ls *.deb
+ 1684  ls *.deb -al
+ 1685  mkdir /Oracle12C/Downthree/deb
+ 1686  mv *.deb /Oracle12C/Downthree/deb/.
+ 1687  ls -al
+ 1688  less Webinar-+Back+to+Basics-+Visualize.js+101+.ics 
+ 1689  rm Webinar-+Back+to+Basics-+Visualize.js+101+.ics 
+ 1690  rm ubuntu-16.04.2-desktop-amd64.iso.torrent 
+ 1691  mv xulrunner /Oracle12C/Downthree/.
+ 1692  mv WebServices /Oracle12C/Downthree/.
+ 1693  mv VinayJain_Portfolio /Oracle12C/Downthree/.
+ 1694  ls -al|less
+ 1695  mv Activiti5180 /Oracle12C/Downthree/.
+ 1696  mv Activiti590_dep /Oracle12C/Downthree/.
+ 1697  ls -al|less
+ 1698  mv apress_invoice /Oracle12C/Downthree/.
+ 1699  ls -al|less
+ 1700  cd /Oracle12C/Downthree/
+ 1701  ls -al
+ 1702  mkdir DOCs
+ 1703  mv /e/Downloads/*.doc .
+ 1704  mv /e/Downloads/*.docx .
+ 1705  mv /e/Downloads/*.ppt .
+ 1706  mv /e/Downloads/*.pptx .
+ 1707  mv /e/Downloads/*.xls .
+ 1708  mv /e/Downloads/*.xlsx .
+ 1709  ls -al
+ 1710  mv *.doc DOCs/.
+ 1711  mv *.docx DOCs/.
+ 1712  mv *.ppt DOCs/.
+ 1713  mv *.pptx DOCs/.
+ 1714  mv *.xls DOCs/.
+ 1715  mv *.xlsx DOCs/.
+ 1716  ls -al
+ 1717  ls -al /e/Downloads/
+ 1718  cd ..
+ 1719  sudo mkdir Downfour
+ 1720  sudo chown kamlesh:developers Downfour
+ 1721  cd Downfour/
+ 1722  cd ..
+ 1723  cd Downthree/
+ 1724  mkdir pom
+ 1725  cd pom
+ 1726  mv /e/Downloads/*.pom .
+ 1727  ls -al /e/Downloads/
+ 1728  cd ../gz/
+ 1729  mv /e/Downloads/*.bz2 .
+ 1730  cd ..
+ 1731  mv /e/Downloads/restfuljersey .
+ 1732  mv /e/Downloads/review .
+ 1733  mv /e/Downloads/SocketAdapter .
+ 1734  mv /e/Downloads/Spring4-JPA2-Hibernate4 .
+ 1735  mv /e/Downloads/srvmix-4.3.0-fuse .
+ 1736  mv /e/Downloads/sublime_text_3 .
+ 1737  mv /e/Downloads/test-app .
+ 1738  ls -al /e/Downloads/
+ 1739  mv /e/Downloads/PoojaJodi .
+ 1740  ls -al /e/Downloads/|less
+ 1741  mv /e/Downloads/Android\ Creating\ REST\ API/ .
+ 1742  ls -al /e/Downloads/|less
+ 1743  ls -al /e/Downloads/AppLayers_files/
+ 1744  cd /e/Downloads/
+ 1745  rm -Rf AppLayers_files/
+ 1746  ls -al
+ 1747  ls -al /Oracle12C/Downfour/
+ 1748  ls -al|less
+ 1749  mv * /Oracle12C/Downfour/.
+ 1750  rm 'Unconfirmed 737693.crdownload' 
+ 1751  rm 'Unconfirmed 76847.crdownload' 
+ 1752  ls -al
+ 1753  mv * /Oracle12C/Downfour/.
+ 1754  ls -al
+ 1755  rm .~lock.BRM-Drool-Training\ Program\ .doc# 
+ 1756  rm .~lock.CA\ Technologies\ -\ OReilly\ Microservice\ Architecture\ eBook.mobi# 
+ 1757  rm .~lock.high-performance-web-sites.ppt# 
+ 1758  ls -al
+ 1759  cd ..
+ 1760  rmdir Downloads
+ 1761  cd Documents/
+ 1762  ls -al
+ 1763  cd /Oracle12C/Documents/
+ 1764  ls -al
+ 1765  ls -al /e/Documents/ALL_SOA_CDs/
+ 1766  ls -al
+ 1767  df
+ 1768  cd /Oracle12C/edrv/
+ 1769  ls -al
+ 1770  cd
+ 1771  cat /etc/fstab
+ 1772  sudo gedit /etc/fstab
+ 1773  sudo mount -a
+ 1774  ls -al /e
+ 1775  cd /OBPM12c/
+ 1776  ls -al
+ 1777  sudo gedit etc/fstab 
+ 1778  cd /CentOS/
+ 1779  sudo gedit etc/fstab 
+ 1780  cd
+ 1781  cd /e
+ 1782  ls -al
+ 1783  mkdir Downloads
+ 1784  mkdir Documents
+ 1785  mkdir chopdi
+ 1786  cd
+ 1787  cd Documents
+ 1788  ls -al
+ 1789  cd ..
+ 1790  cd Downloads
+ 1791  ls -al
+ 1792  cd ..
+ 1793  ls -al
+ 1794  cd /Oracle12C/
+ 1795  ls -al
+ 1796  cd edrv/
+ 1797  ls -al
+ 1798  ls -al a*
+ 1799  mv access.redhat.com /e/.
+ 1800  mv activemq.apache.org /e/.
+ 1801  mv camel.apache.org /e/.
+ 1802  mv courses.in28minutes.com /e/.
+ 1803  mv control4 /e/.
+ 1804  mv docs.camunda.org /e/.
+ 1805  cd /e/docs.camunda.org/
+ 1806  ls -al
+ 1807  tree
+ 1808  cd -
+ 1809  mv git_help /e/.
+ 1810  mv jboss-eap-7.0.0.GA-maven-repository /e/.
+ 1811  mv microservices /e/.
+ 1812  mv netlynx_code /e/.
+ 1813  mv pdf2doc /e/.
+ 1814  ls -al
+ 1815  mv ActivitiProjects /e/.
+ 1816  ls -al
+ 1817  mv ActivitiTrngKShah /e/.
+ 1818  mv BPMforFS /e/.
+ 1819  mv WSO2 /e/.
+ 1820  mv wso2.com/ /e/.
+ 1821  cd /e
+ 1822  ls -al chopdi/
+ 1823  cd chopdi/
+ 1824  cd /Oracle12C/
+ 1825  ls -al
+ 1826  cd edrv/
+ 1827  ls -al
+ 1828  cd chopdi/
+ 1829  ls -al
+ 1830  du
+ 1831  du|less
+ 1832  ls -al Ext\ JS\ books/
+ 1833  ls -al Ext\ JS\ books/ExtJS_zips
+ 1834  ls -al
+ 1835  cd WSO2
+ 1836  du
+ 1837  du|less
+ 1838  ls -al
+ 1839  cd ..
+ 1840  mv WSO2 /e/chopdi/.
+ 1841  ls -al
+ 1842  cd vaadin
+ 1843  ls -al
+ 1844  du
+ 1845  cd ..
+ 1846  mv caadin /e/chopdi/.
+ 1847  mv vaadin /e/chopdi/.
+ 1848  ls -al
+ 1849  mv *.pdf /e/chopdi/.
+ 1850  ls -al
+ 1851  cd ..
+ 1852  ls -al
+ 1853  cd BookCodes/
+ 1854  du
+ 1855  cd ..
+ 1856  mv BookCodes /e/.
+ 1857  ls -al BookCodes/
+ 1858  cd BookCodes/
+ 1859  ls -al
+ 1860  mv * /e/BookCodes/.
+ 1861  ls -al
+ 1862  ls -al Xtext_n_Xtend_0304OS_Code/
+ 1863  ls -al /e/BookCodes/Xtext_n_Xtend_0304OS_Code/
+ 1864  cd Xtext_n_Xtend_0304OS_Code/
+ 1865  ls -al
+ 1866  cd org.example.xtend-plain-java/
+ 1867  ls -al
+ 1868  mv * /e/BookCodes/Xtext_n_Xtend_0304OS_Code/org.example.xtend-plain-java/.
+ 1869  cd src
+ 1870  ls -al
+ 1871  cd org/example/xtend/examples/
+ 1872  ls -al
+ 1873  cd ../../../../..
+ 1874  cd ..
+ 1875  ls -al
+ 1876  cd ..
+ 1877  ls -al
+ 1878  cd ..
+ 1879  cd /e/BookCodes/
+ 1880  ls -al
+ 1881  cd /Oracle12C/edrv/BookCodes/
+ 1882  mv *.zip /e/BookCodes/.
+ 1883  ls -al *.zip
+ 1884  ls -al |grep zip
+ 1885  ls -al
+ 1886  cd /e/BookCodes/
+ 1887  ls -al
+ 1888  cd -
+ 1889  ls -al
+ 1890  cd /e/BookCodes/
+ 1891  ls -al
+ 1892  cd ..
+ 1893  mv BookCodes BookCodesX
+ 1894  mkdir BookCodes
+ 1895  cd BookCodesX
+ 1896  mv *.zip ../BookCodes/.
+ 1897  ls -al
+ 1898  mv *.tar ../BookCodes/.
+ 1899  ls -al|less
+ 1900  mv *.tar.gz ../BookCodes/.
+ 1901  mv *.rar ../BookCodes/.
+ 1902  ls -al|less
+ 1903  cd ../BookCodes
+ 1904  ls -al
+ 1905  cd /Oracle12C/edrv/BookCodes/
+ 1906  ls -al
+ 1907  ls -al|less
+ 1908  cd Bk_Cd_ZIPs/
+ 1909  ls -al
+ 1910  ls -al /e/BookCodes/Apache\ Tomcat\ 7\ Essentials.zip 
+ 1911  rm 'Apache Tomcat 7 Essentials.zip' 
+ 1912  cd /e/BookCodes
+ 1913  cd -
+ 1914  ls -al
+ 1915  ls -al *.zip
+ 1916  mv *.zip /e/BookCodes/.
+ 1917  ls -al
+ 1918  cd jbpm5bkcd/
+ 1919  ls -al
+ 1920  cd ..
+ 1921  mv jbpm5bkcd ../.
+ 1922  ls -al
+ 1923  cd ..
+ 1924  rmdir Bk_Cd_ZIPs/
+ 1925  ls -al
+ 1926  mkdir /e/BookCodesZ
+ 1927  mv * /e/BookCodesZ/.
+ 1928  ls -al
+ 1929  cd /e/BookCodes
+ 1930  ls -al
+ 1931  cd ../BookCodesX
+ 1932  ls -al
+ 1933  ls -al Bk_Cd_ZIPs/
+ 1934  ls -al
+ 1935  ls -al Bk_Cd_ZIPs/
+ 1936  ls -al /e/BookCodes/Vaadin\ 7\ Cookbook.zip 
+ 1937  cd Bk_Cd_ZIPs/
+ 1938  ls -al
+ 1939  rm *.zip
+ 1940  ls -al
+ 1941  cd jbpm5bkcd/
+ 1942  ls -al
+ 1943  cd ..
+ 1944  ls -al
+ 1945  mv * ../.
+ 1946  cd ..
+ 1947  rmdir Bk_Cd_ZIPs
+ 1948  ls -al
+ 1949  cd ..
+ 1950  ls -al
+ 1951  exit
+ 1952  cd /e/chopdi/
+ 1953  ls -al
+ 1954  cd ..
+ 1955  cd BookCodes/
+ 1956  ls -al
+ 1957  cd Bk_Cd_ZIPs/
+ 1958  ls -al
+ 1959  cd /Oracle12C/edrv/BookCodes/
+ 1960  ls -al
+ 1961  cd Bk_Cd_ZIPs/
+ 1962  ls -al
+ 1963  mv Drools\ Developer\?s\ Cookbook.zip Drools\ Developers\ Cookbook.zip 
+ 1964  mv Vaadin\ 7\ UI\ Design\ By\ Example_\ Beginner\?s\ Guide.zip Vaadin\ 7\ UI\ Design\ By\ Example_\ Beginners\ Guide.zip 
+ 1965  cd ..
+ 1966  mv JBoss\ ESB\ Beginner\?s\ Guide_bookCode.zip JBoss\ ESB\ Beginners\ Guide_bookCode.zip 
+ 1967  ls -al
+ 1968  cd ..
+ 1969  ls -al BookCodes/
+ 1970  cd
+ 1971  exit
+ 1972  ps -aef
+ 1973  top
+ 1974  sudo umount /e
+ 1978  cd Boo
+ 1979  cd /e/BookCodes
+ 1981  cd ../BookCodesX
+ 1983  cd ../BookCodesZ
+ 1985  cd 
+ 1987  cd Sites/
+ 1989  cd /Oracle12C/edrv/chopdi/
+ 1991  mv Html5_AngularJS_NodeJS /e/chopdi/.
+ 1993  mv iBatis_begin_src.zip /e/BookCodes/.
+ 1995  mv JMeter_2950_Code.zip /e/BookCodes/.
+ 1996  mv JSF_2.0_Cookbook.zip /e/BookCodes/.
+ 1998  mv Hibernate\ in\ Action\ Code.rar /e/BookCodes/.
+
+
+
+
+
+ 2004  cd /e
+ 2005  ls -al
+ 2006  mv /Oracle12C/edrv/K_Contents .
+ 2007  cd K_Contents/
+ 2008  mv K_GWT_Training_4_Days.doc K_GWT_Training_V-2.8.doc 
+ 2009  cd ../Downloads/
+ 2010  mv /Oracle12C/Downthree/DOCs/KamleshShah_Resume.doc .
+
