@@ -16,7 +16,7 @@
 //});
 
 Route::group(['middleware'=>[web]], function(){
-  Route::get('login/facebook', 'Auth\AuthController@redirectToFacebook';
+  Route::get('login/facebook', 'Auth\AuthController@redirectToFacebook');
   Route::get('login/facebook/callback', 'AuthController@getFacebookCallback');
 });
 
